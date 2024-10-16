@@ -22,7 +22,6 @@ Here is a list of 20 Jekyll templates that you can use to set up your resume + b
 
 | Template | Description | Repository Link |
 | -------- | ----------- | --------------- |
-| **Minimal Mist** | A versatile, multi-purpose theme, great for blogs and resumes. | [Minimal Mist](https://github.com/mmistakes/minimal-mistakes) |
 | **Freelancer Theme** | One-page portfolio with sections for projects and blog. | [Freelancer Theme](https://github.com/jeromelachaud/freelancer-theme) |
 | **Resume Template** | Clean, single-page resume with customizable sections. | [Resume Template](https://github.com/jglovier/resume-template) |
 | **Lagrange** | Minimalist theme with a professional, portfolio-first design. | [Lagrange](https://github.com/LeNPaul/Lagrange) |
@@ -33,7 +32,6 @@ Here is a list of 20 Jekyll templates that you can use to set up your resume + b
 | **Massively** | Bold, visually striking theme, blog-centric. | [Massively](https://github.com/iwiedenm/jekyll-theme-massively) |
 | **Jekyll Now** | Instant blogging framework with easy setup, suitable for resumes. | [Jekyll Now](https://github.com/barryclark/jekyll-now) |
 | **Hyde** | Elegant minimalist theme for blogs and portfolios. | [Hyde](https://github.com/poole/hyde) |
-| **So Simple** | Responsive, clean layout, easy to customize for resume. | [So Simple](https://github.com/mmistakes/so-simple-theme) |
 | **Minimal** | Clean, minimalist layout, perfect for focusing on content. | [Minimal](https://github.com/pages-themes/minimal) |
 | **Creative Theme** | One-page creative portfolio with sections for projects and blog. | [Creative Theme](https://github.com/volny/creative-theme-jekyll) |
 | **Type** | Modern, lightweight theme ideal for blog + resume portfolios. | [Type](https://github.com/heiswayi/type-theme) |
