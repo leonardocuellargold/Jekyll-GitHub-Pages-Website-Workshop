@@ -8,12 +8,11 @@ Welcome! This guide will help you set up a personal website with a resume and bl
 Before you begin, ensure you have the following installed:
 1. **Ruby** (needed for Jekyll)
 2. **Jekyll** (static site generator)
-   - Install by running:
-     ```bash
-     gem install bundler jekyll
-     ```
-3. **Git** (version control)
-   - Install from [here](https://git-scm.com/downloads) if not already installed.
+   - Install by following this [guide](https://jekyllrb.com/docs/installation/).
+   - Note for mac users: Run the commands to configure your shell to automatically use chruby **separately**.
+   - If the terminal replies with "you don't have enough permissions," restart the terminal session. This way, the terminal will update. 
+3. **GitHub Desktop** (version control)
+   - Install from [here](https://desktop.github.com/download/) if not already installed.
 4. **GitHub Account**
    - Sign up for free at [GitHub](https://github.com/).
 
@@ -42,10 +41,10 @@ Here is a list of 20 Jekyll templates that you can use to set up your resume + b
 | **Minimal Resume** | Resume-specific theme with easy blog integration. | [Minimal Resume](https://github.com/murraco/jekyll-resume-template) |
 
 ### **Step 3: Set Up Your Chosen Template**
-1. **Clone the template repository**: 
-   ```bash
-   git clone <repository-url>
-   ```
+1. **Fork the template repository**: 
+- Fork the template repository and rename it with (GitHub Username).github.io
+- Then clone the repository using GitHub Desktop. Click on code>clone repository> open in GitHub Desktop.
+- Lastly choose you will contribut for your own purposes and not to the primary repository. 
 
 2. **Navigate into the folder**:
    ```bash
@@ -66,21 +65,18 @@ Here is a list of 20 Jekyll templates that you can use to set up your resume + b
 
 5. **Customize Your Content**:
    - Update the `_config.yml` file with your personal information (name, email, social links).
+   - Delete the base_url line, and change the url line with your personal (username.github.io) url. 
    - Modify or add Markdown files (`.md`) for your resume and blog content.
    - Use Jekyll’s default folder structure for blog posts (`_posts` folder).
 
 6. **Deploy to GitHub Pages**:
-   Push your changes to GitHub to make your site live:
-   ```bash
-   git add .
-   git commit -m "Initial commit"
-   git push origin main
-   ```
+   Push your changes to GitHub Desktop to make your site live:
 
    Then, enable GitHub Pages under your repository settings to deploy your site at `https://username.github.io`.
 
 ### **Step 4: Personalize Your Resume + Blog**
-Each template provides different customization options, allowing you to add a personal touch to your online portfolio. Make sure to:
+**Each template provides different customization options, allowing you to add a personal touch to your online portfolio. Make sure to:**
+- Go to my [workshop repository](https://github.com/leonardocuellargold/website_workshop). And feel free to copy the **resume.html** template. 
 - Update your resume with your work experience, education, and skills.
 - Add blog posts to share your thoughts, projects, or interests.
 
