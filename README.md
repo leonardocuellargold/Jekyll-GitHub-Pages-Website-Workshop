@@ -40,6 +40,8 @@ Here is a list of 20 Jekyll templates that you can use to set up your resume + b
 | **Prologue** | Personal portfolio theme with a built-in resume section. | [Prologue](https://github.com/chrisbobbe/jekyll-theme-prologue) |
 | **Minimal Resume** | Resume-specific theme with easy blog integration. | [Minimal Resume](https://github.com/murraco/jekyll-resume-template) |
 
+You can also download a template from the resources included in our slides. Prioritize templates written in .html format and not .liquid 
+
 ### **Step 3: Set Up Your Chosen Template**
 1. **Fork the template repository**: 
 - Fork the template repository and rename it with (GitHub Username).github.io
