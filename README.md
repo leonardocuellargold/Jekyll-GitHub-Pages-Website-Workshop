@@ -78,7 +78,7 @@ You can also download a template from the resources included in our slides. Prio
 
 ### **Step 4: Personalize Your Resume + Blog**
 **Each template provides different customization options, allowing you to add a personal touch to your online portfolio. Make sure to:**
-- Go to my [workshop repository](https://github.com/leonardocuellargold/website_workshop). And feel free to copy the **resume.html** template. 
+- Go to my [workshop repository](https://github.com/leonardocuellargold/website_workshop/blob/master/resume.html). And feel free to copy the **resume.html** template. 
 - Update your resume with your work experience, education, and skills.
 - Add blog posts to share your thoughts, projects, or interests.
 
