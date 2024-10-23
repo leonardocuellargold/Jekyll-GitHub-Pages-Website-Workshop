@@ -82,6 +82,101 @@ You can also download a template from the resources included in our slides. Prio
 - Update your resume with your work experience, education, and skills.
 - Add blog posts to share your thoughts, projects, or interests.
 
+### **Step 5: Add a Collection for Projects**
+
+To showcase your projects alongside your resume, follow these steps to add a collection named `projects`:
+
+1. **Define the Collection in `_config.yml`:**
+Open your `_config.yml` file and add the following lines to define a collection named `projects`:
+    
+    ```yaml
+    collections:
+      projects:
+        output: true
+        permalink: /projects/:path/
+    
+    ```
+    
+    This configuration enables the collection and specifies the URL structure for your project pages.
+    
+2. **Create the Collection Directory:**
+In your Jekyll site’s root directory, create a new folder named `_projects`. This is where you’ll store each project as a Markdown file.
+3. **Add Project Posts:**
+Inside the `_projects` directory, create Markdown files for each project. For example, create a file named `project1.md` with the following content:
+    
+    ```yaml
+    ---
+    layout: project
+    title: "Project 1: My Awesome Project"
+    description: "A brief description of what this project is about."
+    repo_url: "<https://github.com/username/project1-repo>"
+    images:
+      - "<https://example.com/images/project1-1.jpg>"
+      - "<https://example.com/images/project1-2.jpg>"
+    ---
+    
+    Here, you can add more detailed information about the project, such as features, technologies used, or key achievements.
+    
+    ```
+    
+4. **Create an Index Page for Projects:**
+To list your projects, create a file named `projects.html` (or `index.html` inside the `_projects` folder if you prefer) with the following content:
+    
+    ```html
+    ---
+    layout: default
+    title: "My Projects"
+    permalink: /projects/
+    ---
+    
+    <section class="projects-section">
+      <h1>{{ page.title }}</h1>
+      <p class="description">Explore my collection of projects, where I showcase my work and creativity.</p>
+    
+      <div class="projects-grid">
+        {% for project in site.projects %}
+          <div class="project-card">
+            <div class="project-card-header">
+              {% if project.images %}
+                <img src="{{ project.images[0] }}" alt="{{ project.title }} cover image" class="project-cover" loading="lazy">
+              {% endif %}
+            </div>
+            <div class="project-card-body">
+              <h2 class="project-title">{{ project.title }}</h2>
+              <p class="project-description">{{ project.description }}</p>
+              <a href="{{ project.url }}" class="project-link">View Details</a>
+            </div>
+          </div>
+        {% endfor %}
+      </div>
+    </section>
+    
+    ```
+    
+    This will create a beautiful index page listing all your projects.
+    
+5. **Update Your Layouts (Optional):**
+If you want your homepage or other pages to include a link to the projects page, add a navigation link in your `_data/navigation.yml` (or directly in your HTML if using manual navigation).
+    
+    ```yaml
+    - title: "Projects"
+      url: "/projects/"
+    
+    ```
+    
+    Or, if manually adding HTML links:
+    
+    ```html
+    <nav>
+      <ul>
+        <li><a href="/projects/">Projects</a></li>
+        <li><a href="/blog/">Blog</a></li>
+        <!-- Add more links as needed -->
+      </ul>
+    </nav>
+    
+    ```
+
 ### **Additional Resources**
 - [Jekyll Documentation](https://jekyllrb.com/docs/)
 - [Markdown Guide](https://www.markdownguide.org/)
