@@ -101,7 +101,41 @@ Open your `_config.yml` file and add the following lines to define a collection 
     
 2. **Create the Collection Directory:**
 In your Jekyll site’s root directory, create a new folder named `_projects`. This is where you’ll store each project as a Markdown file.
-3. **Add Project Posts:**
+3. **Create a Layout for Projects:**
+To define how each project page should look, create a file named `project.html` inside the `_layouts` folder. This file will serve as the layout for your project pages.
+    
+    ```html
+    <!-- _layouts/project.html -->
+    ---
+    layout: default
+    ---
+    
+    <article class="project-page">
+      <h1>{{ page.title }}</h1>
+      <p class="project-description">{{ page.description }}</p>
+    
+      {% if page.images %}
+        <div class="project-images">
+          {% for image in page.images %}
+            <img src="{{ image }}" alt="{{ page.title }} image {{ forloop.index }}" loading="lazy">
+          {% endfor %}
+        </div>
+      {% endif %}
+    
+      <div class="project-content">
+        {{ content }}
+      </div>
+    
+      {% if page.repo_url %}
+        <a href="{{ page.repo_url }}" class="repo-link" target="_blank">View on GitHub</a>
+      {% endif %}
+    </article>
+    
+    ```
+    
+    This layout defines how the project pages will be structured, with a title, description, optional images, and a GitHub link if available.
+    
+4. **Add Project Posts:**
 Inside the `_projects` directory, create Markdown files for each project. For example, create a file named `project1.md` with the following content:
     
     ```yaml
@@ -119,10 +153,11 @@ Inside the `_projects` directory, create Markdown files for each project. For ex
     
     ```
     
-4. **Create an Index Page for Projects:**
+5. **Create an Index Page for Projects:**
 To list your projects, create a file named `projects.html` (or `index.html` inside the `_projects` folder if you prefer) with the following content:
     
     ```html
+    <!-- projects.html -->
     ---
     layout: default
     title: "My Projects"
@@ -153,9 +188,9 @@ To list your projects, create a file named `projects.html` (or `index.html` insi
     
     ```
     
-    This will create a beautiful index page listing all your projects.
+    This HTML code creates a visually appealing index page listing all your projects. You can customize the classes and styling to fit your theme.
     
-5. **Update Your Layouts (Optional):**
+6. **Update Your Navigation (Optional):**
 If you want your homepage or other pages to include a link to the projects page, add a navigation link in your `_data/navigation.yml` (or directly in your HTML if using manual navigation).
     
     ```yaml
@@ -176,7 +211,7 @@ If you want your homepage or other pages to include a link to the projects page,
     </nav>
     
     ```
-
+    
 ### **Additional Resources**
 - [Jekyll Documentation](https://jekyllrb.com/docs/)
 - [Markdown Guide](https://www.markdownguide.org/)
