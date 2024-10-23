@@ -222,7 +222,3 @@ If you want your homepage or other pages to include a link to the projects page,
 Feel free to explore, experiment, and build something unique! If you run into any issues, don't hesitate to ask for help.
 
 Good luck!
-
----
-
-This `README.md` provides students with clear instructions and links to the templates so they can get started quickly.
